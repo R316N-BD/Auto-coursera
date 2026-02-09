@@ -18,7 +18,22 @@
 > [!CAUTION]
 > This project is intended for educational purposes only. The author does not condone or support any cheating in any kind of course or certification and is not responsible for any misuse. This is purely a hobby project meant for experimentation and learning.
 
+## 📚 Code Documentation
 
+**Want to understand how this works?** The complete source code and detailed explanations are now available!
+
+- **[INDEX.md](INDEX.md)** - Start here! Navigation guide for all documentation
+- **[SUMMARY.md](SUMMARY.md)** - Quick overview of how quiz solving works
+- **[QUIZ_SOLVING_EXPLAINED.md](QUIZ_SOLVING_EXPLAINED.md)** - Complete walkthrough with examples
+- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Essential code snippets
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Component diagrams and system design
+
+### Source Code Files:
+- **content.js** - Extracts quiz questions and clicks correct answers
+- **background.js** - AI integration with Google Gemini
+- **popup.js** & **popup.html** - User interface
+
+**The key code that clicks answers:** `content.js` line 156 - `element.click()`
 
 ## ✨ Main Features
 
