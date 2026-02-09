@@ -8,19 +8,35 @@ This repository now contains the **complete source code and documentation** show
 
 ## 🎯 Start Here
 
-**New to this code?** Start with **SUMMARY.md**
+**Want to understand "how and why"?** Start with **LEARNING_GUIDE.md** 📖
 
-**Want to understand the flow?** Read **QUIZ_SOLVING_EXPLAINED.md**
+**New to this code?** Read **SUMMARY.md**
 
-**Just need key code snippets?** Check **QUICK_REFERENCE.md**
+**Want to understand the flow?** Check **QUIZ_SOLVING_EXPLAINED.md**
+
+**Just need key code snippets?** View **QUICK_REFERENCE.md**
 
 **Want to see the architecture?** View **ARCHITECTURE.md**
 
-**Want deep technical understanding?** Read **EDUCATIONAL_DEEPDIVE.md** 🎓
+**Want deep technical understanding?** Study **EDUCATIONAL_DEEPDIVE.md** 🎓
 
 ---
 
 ## 📂 Documentation Guide
+
+### 0. **LEARNING_GUIDE.md** - Start Here for Education! 📖
+**Best for:** Understanding the "how and why" from an educational perspective  
+**Contains:**
+- Direct answers to "how does it get the page/answers/click"
+- Complete learning path (Level 1-4)
+- Key educational concepts explained
+- Practical examples with explanations
+- Skills you'll develop
+- Next steps for learning
+
+**Read this if:** You want a guided path to understanding all the technical mechanisms.
+
+---
 
 ### 1. **SUMMARY.md** - Your Starting Point 🌟
 **Best for:** First-time readers, quick overview  
