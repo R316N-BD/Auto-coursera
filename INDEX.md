@@ -16,6 +16,8 @@ This repository now contains the **complete source code and documentation** show
 
 **Want to see the architecture?** View **ARCHITECTURE.md**
 
+**Want deep technical understanding?** Read **EDUCATIONAL_DEEPDIVE.md** 🎓
+
 ---
 
 ## 📂 Documentation Guide
@@ -88,6 +90,23 @@ This repository now contains the **complete source code and documentation** show
 - Installation process
 
 **Read this if:** You want to understand what the extension does, not how it's coded.
+
+---
+
+### 6. **EDUCATIONAL_DEEPDIVE.md** - Technical Deep Dive 🎓
+**Best for:** Students, educators, technical understanding  
+**Contains:**
+- Browser extension architecture explained
+- DOM manipulation fundamentals
+- CSS selectors deep dive
+- Event handling and simulation
+- Asynchronous programming concepts
+- API integration step-by-step
+- Security and permissions
+- Complete flow with detailed explanations
+- Educational resources and best practices
+
+**Read this if:** You want to truly understand HOW and WHY the technical mechanisms work at a fundamental level.
 
 ---
 

@@ -24,9 +24,19 @@
 
 - **[INDEX.md](INDEX.md)** - Start here! Navigation guide for all documentation
 - **[SUMMARY.md](SUMMARY.md)** - Quick overview of how quiz solving works
+- **[EDUCATIONAL_DEEPDIVE.md](EDUCATIONAL_DEEPDIVE.md)** - 🎓 Deep technical understanding (NEW!)
 - **[QUIZ_SOLVING_EXPLAINED.md](QUIZ_SOLVING_EXPLAINED.md)** - Complete walkthrough with examples
 - **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Essential code snippets
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - Component diagrams and system design
+
+### For Educational Understanding:
+The **[EDUCATIONAL_DEEPDIVE.md](EDUCATIONAL_DEEPDIVE.md)** document explains:
+- How browser extensions access web pages
+- DOM manipulation and CSS selectors
+- Event handling and click simulation
+- Asynchronous programming
+- API integration techniques
+- Security and permissions
 
 ### Source Code Files:
 - **content.js** - Extracts quiz questions and clicks correct answers
