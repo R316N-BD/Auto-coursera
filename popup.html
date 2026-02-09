@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Coursera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 350px;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .section h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .primary-btn {
+            background: #4CAF50;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .primary-btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .secondary-btn {
+            background: #2196F3;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .secondary-btn:hover {
+            background: #0b7dda;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .save-btn {
+            background: #FF9800;
+            color: white;
+        }
+        
+        .save-btn:hover {
+            background: #e68900;
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .status.success {
+            background: rgba(76, 175, 80, 0.2);
+            border: 1px solid #4CAF50;
+        }
+        
+        .status.error {
+            background: rgba(244, 67, 54, 0.2);
+            border: 1px solid #f44336;
+        }
+        
+        .status.info {
+            background: rgba(33, 150, 243, 0.2);
+            border: 1px solid #2196F3;
+        }
+        
+        .help-text {
+            font-size: 11px;
+            opacity: 0.8;
+            margin-top: 5px;
+            line-height: 1.4;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 11px;
+            opacity: 0.7;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎓 Auto Coursera</h1>
+        <p>Complete courses in one click</p>
+    </div>
+    
+    <!-- Main Action Buttons -->
+    <div class="section">
+        <h3>📝 Quiz Actions</h3>
+        <button id="solveQuizBtn" class="primary-btn">
+            Solve Quiz
+        </button>
+        <p class="help-text">
+            Click this button when you have a quiz open. The extension will extract questions and automatically select the correct answers using AI.
+        </p>
+    </div>
+    
+    <div class="section">
+        <h3>⚡ Course Actions</h3>
+        <button id="bypassCourseBtn" class="secondary-btn">
+            Bypass Course
+        </button>
+        <p class="help-text">
+            Automatically mark all lectures, readings, and discussions as complete.
+        </p>
+    </div>
+    
+    <!-- API Key Configuration -->
+    <div class="section">
+        <h3>🔑 API Configuration</h3>
+        <input 
+            type="password" 
+            id="apiKeyInput" 
+            placeholder="Enter your Gemini API key"
+        >
+        <button id="saveKeyBtn" class="save-btn">
+            Save API Key
+        </button>
+        <p class="help-text">
+            Get your free API key from 
+            <a href="https://aistudio.google.com/apikey" target="_blank">Google AI Studio</a>
+        </p>
+    </div>
+    
+    <!-- Status Messages -->
+    <div id="statusMessage" class="hidden"></div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p>⚠️ For educational purposes only</p>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
